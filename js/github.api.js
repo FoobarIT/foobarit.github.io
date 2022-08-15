@@ -1,13 +1,13 @@
-axios.get('https://api.github.com/users/foobarit')
-    .then(function (response) {
-        // handle success
-        console.log(response.json());
-        
-    })
-    .catch(function (error) {
-        // handle error
-        console.log(error);
-    })
-    .then(function () {
-        // always executed
-    });
+
+    async function getUser() {
+        try {
+          const response = await axios.get('https://api.github.com/users/foobarit');
+      
+          return response.data;
+        } catch (err) {
+          console.log(err);
+        }
+      }
+      
+      console.log(await getUser());
+    
