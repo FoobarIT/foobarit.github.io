@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+body {
+    background-image: url("./bg.jpg");
+    color: whitesmoke;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.header {
+    margin-top: 20vh;
+}
+
+
+@keyframes float {
+	0% {
+	
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+	
+		transform: translatey(0px);
+	}
+}
+
+.eth {
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
