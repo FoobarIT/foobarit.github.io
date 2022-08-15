@@ -9,6 +9,9 @@ body {
     margin-top: 20vh;
 }
 
+.tips {
+    margin-top: 5vh;
+}
 
 @keyframes float {
 	0% {
